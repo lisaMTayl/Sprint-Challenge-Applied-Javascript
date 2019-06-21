@@ -1,8 +1,8 @@
 class TabLink {
-  constructor(tabElement) {
+  constructor(banana7) {
     // assign this.tabElement to the tabElement DOM reference
     // this.tabElement;
-    this.tabElement = tabElement;
+    this.tabElement = banana7;
 
     // Get the `data-tab` value from this.tabElement and store it here
     // this.tabData = ;
@@ -29,7 +29,7 @@ class TabLink {
     // this.cards = Array.from(this.cards).map();
 
 
-      this.cards = Array.from(this.cards).map(tabCard => new TabCard(tabCard));
+      this.cards = Array.from(this.cards).map(banana5 => new TabCard(banana5));
 
     // Add a click event that invokes this.selectTab
     // this.tabElement.addEventListener();
@@ -45,29 +45,29 @@ class TabLink {
     
     // Iterate through the NodeList removing the .active-tab class from each element
     // tabs.forEach()
-    tabs.forEach(element =>
-        element.classList.remove('active-tab'));
+    tabs.forEach(banana =>
+        banana.classList.remove('active-tab'));
     // Select all of the elements with the .card class on them
     // const cards = ;
     const cards = document.querySelectorAll('.card');
 
     // Iterate through the NodeList setting the display style each one to 'none'
     // cards.forEach()
-    cards.forEach(card => card.style.display = 'none');
+    cards.forEach(banana2 => banana2.style.display = 'none');
     
     // Add a class of ".active-tab" to this.tabElement
     // this.tabElement;
     this.tabElement.classList.add('active-tab'); //wrong
   
     // Notice we are looping through the this.cards array and invoking selectCard() from the TabCard class. Just un-comment the code and study what is happening here.
-     this.cards.forEach(card => card.selectCard());
+     this.cards.forEach(banana3 => banana3.selectCard());
   }
 }
 
 class TabCard {
-  constructor(cardElement){
+  constructor(banana6){
     // Assign this.cardElement to the cardElement DOM reference
-    this.cardElement = cardElement;
+    this.cardElement = banana6;
   }
   selectCard(){
     // Update the style of this.cardElement to display = "flex"
@@ -88,6 +88,6 @@ class TabCard {
 */
 
 let tabs = document.querySelectorAll('.tab');
-tabs.forEach(tabElement => {
-  new TabLink(tabElement);
+tabs.forEach(banana4 => {
+  new TabLink(banana4);
 });
