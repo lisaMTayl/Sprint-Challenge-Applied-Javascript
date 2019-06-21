@@ -2,9 +2,11 @@ class TabLink {
   constructor(tabElement) {
     // assign this.tabElement to the tabElement DOM reference
     // this.tabElement;
+    this.tabElement = tabElement;
 
     // Get the `data-tab` value from this.tabElement and store it here
-    // this.tabData = ; 
+    // this.tabData = ;
+    this.tabData = this.tabElement.dataset.tab;
 
     // We need to find out if a user clicked 'all' cards or a specific category.  Follow the instructions below to accomplish this task:    
 
@@ -71,7 +73,7 @@ class TabCard {
 */
 
 let tabs = document.querySelectorAll('.tab');
-tabs.forEach(element) => {
-  new TabLink(element);
-}
+tabs.forEach(tabElement => {
+  new TabLink(tabElement);
+});
   }
